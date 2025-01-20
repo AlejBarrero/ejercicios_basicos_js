@@ -14,10 +14,16 @@ const names = [
     'Jessica',
     'Marc'
 ];
-function nameFinder(nameList) {
-    let name;
 
-    for (let i = 0; i < nameList.length; i++) {
+function nameFinder(nameList, name) {
+    let exists = false;
 
+    if (nameList.includes(name)) {
+        exists = true;
+        console.log("exists: " + exists + ", indice: " + nameList.indexOf(name));
+    } else {
+        console.log("exists: " + exists);
     }
 }
+
+nameFinder(names, "Xabier");

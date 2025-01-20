@@ -15,6 +15,7 @@ const duplicates = [
     'pasta',
     'soda'
 ];
+
 function removeDuplicates(list) {
     let duplicate = [];
 

@@ -3,6 +3,7 @@ Es un poco locura, pero podremos ejercitar nuestra lógica con este ejercicio.
 Puedes usar este array para probar tu función: */
 
 const mixedElements = [6, 1, 'Marvel', 1, 'hamburguesa', '10', 'Prometeo', 8, 'Hola mundo'];
+
 function averageWord(list) {
     let letras = 0;
     let numeros = 0;
