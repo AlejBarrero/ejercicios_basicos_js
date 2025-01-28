@@ -18,5 +18,16 @@ const words = [
 ];
 
 function repeatCounter(list) {
-    // Completar
+    let sumaPalabras = {};
+
+    for (let i = 0; i < list.length; i++) {
+        if (sumaPalabras[list[i]]) {
+            sumaPalabras[list[i]]++;
+        } else {
+            sumaPalabras[list[i]] = 1;
+        }
+    }
+    return sumaPalabras;
 }
+
+console.log(repeatCounter(words));
